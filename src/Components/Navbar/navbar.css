@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    background-color: orange;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar__item--links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.navbar__item--links a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-left: 2em;
+}
+
+.navbar #image{
+    width: 70px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.icon{
+    width: 25px;
+    margin-left: 1em;
+}
