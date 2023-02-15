@@ -1,6 +1,7 @@
 import "./navbar.css";
 import React from 'react';
-import { Logo, CartShoppingIcon, UserIcon} from '../../assets/Images';
+import { Logo } from '../../assets/Images';
+import CartWidget from '../CartWidget/CartWidget';
 
 const Navbar = (props)=>{
     return(
@@ -15,10 +16,7 @@ const Navbar = (props)=>{
                 <a href="#figuras">{props.Figuras}</a>
                 <a href="#contacto">{props.Contacto}</a>
             </ul>
-            <div className="icons">
-                <img className="icon" src={CartShoppingIcon} alt="Icono no encontrado"/>
-                <img className="icon" src={UserIcon} alt="Icono no encontrado"/>
-            </div>
+            <CartWidget />
         </header>
     );
 };

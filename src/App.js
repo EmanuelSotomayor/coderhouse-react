@@ -1,3 +1,4 @@
+import ItemListContainer from './Components/ItemListContainer/ItemListContainer';
 import Navbar from './Components/Navbar/Navbar';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
       Novelas="Novelas ligeras" 
       Figuras="Figuras" 
       Contacto="Contacto"/>
+      <ItemListContainer/>
     </div>
   );
 }

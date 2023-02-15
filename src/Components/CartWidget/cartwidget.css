@@ -1,0 +1,23 @@
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#counter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(230, 0, 0);
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    color: #FFFFFF;
+}
+
+.icon{
+    width: 25px;
+    max-width: 25px;
+    height: 25px;
+    margin-left: 1em;
+}
