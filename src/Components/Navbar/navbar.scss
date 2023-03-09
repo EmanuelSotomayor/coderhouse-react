@@ -1,0 +1,105 @@
+.navbar{
+    display: flex;
+    width: 100%;
+    .iconsContainer{
+        display: flex;
+        justify-content: space-between;
+        .bi-list{
+            font-size: 3rem;
+        }
+        i{
+            font-size: 1.5rem;
+            margin-left: .5rem;
+            color: #FFFFFF;
+        }
+        .bi-person-fill{
+            font-size: 2rem;
+        }
+    }
+    #image{
+        width: 4.375em;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    #navbarContainer{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        button{
+            background-color: transparent;
+            border: none;
+        }
+        #isClosed{
+            display: none;
+        }
+        nav{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgb(255, 166, 0);
+            padding: 1rem;
+            z-index: 999;
+            min-height: 100vh;
+            box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .8);
+            button{
+                i{
+                    font-size: 1.5rem;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
+
+.navbar__item--links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    li{
+        list-style: none;
+        padding: 1rem;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        margin-left: 2em;
+    }
+}
+
+@media screen and (min-width: 570px){
+    .navbar{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        #navbarContainer{
+            nav{
+                position: relative;
+                z-index: 0;
+                flex-direction: row;
+            }
+            #isClosed{
+                display: flex;
+                box-shadow: none;
+                background-color: none;
+            }
+            .bi-x-lg{
+                display: none;
+            }
+        }
+        .navbar__item--links{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            flex-direction: row;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.bannerContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 166, 0);
+    width: 100%;
+    border-bottom-right-radius: 10em;
+    padding: .5rem;
+    .bannerContainer__item{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        position: relative;
+        #bannerImg{
+            display: none;
+            width: 500px;
+            max-width: 100%;
+            height: auto;
+        }
+        .bannerBody{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 1rem;
+            h1{
+                font-size: 3em;
+                line-height: 1.3;
+                text-align: left;
+                span{
+                    color: #FFFFFF;
+                }
+            }
+            p{
+                line-height: 1.5;
+                font-size: 1rem;
+                font-weight: bold;
+                margin-top: .5em;
+                text-align: left;
+                width: 80%;
+            }
+            .buttonTitle{
+                margin-top: 1.5em;
+            }
+        }
+    }
+}
