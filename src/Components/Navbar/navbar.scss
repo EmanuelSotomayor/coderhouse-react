@@ -79,6 +79,9 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        #openMenu{
+            display: none;
+        }
         #navbarContainer{
             nav{
                 position: relative;

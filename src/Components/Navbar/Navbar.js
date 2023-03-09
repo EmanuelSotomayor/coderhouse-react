@@ -18,7 +18,9 @@ const Navbar = ({ children, ...params })=>{
                     </button>
                     <ul className="navbar__item--links">
                         <li>
-                            <a href="#inicio">{params.Home}</a>
+                            <Link to={"/"}>
+                                {params.Home}
+                            </Link>
                         </li>
                         <li>
                             <Link to={"/mangas"}>
